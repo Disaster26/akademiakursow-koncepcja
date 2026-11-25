@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Kursy angielskiego online - Angielski Bez Tajemnic | Akademia Kursów</title>
+<meta name="description" content="Kursy angielskiego online po polsku: słownictwo, podstawy, czasy i gramatyka. Lekcje w Full HD, ćwiczenia do pobrania, dostęp 24/7 przez 12 miesięcy. Autor: Krzysztof Mustwiło.">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap&subset=latin-ext" rel="stylesheet">
+<link rel="preload" as="image" href="img/kris-1280.webp" imagesrcset="img/kris-800.webp 800w, img/kris-1280.webp 1280w, img/kris-1920.webp 1920w" imagesizes="(min-width:900px) 80svh, 100vw" fetchpriority="high">
+<style>
+:root{
+  --blue:#36A8FF; --blue-d:#0E72C9; --navy:#0A2540; --ink:#14202E; --muted:#4D5B6B;
+  --yellow:#FFD21F; --gray:#EEF3F8; --line:#D9E2EC; --hero:#1A191A;
+  --head:"Lexend",system-ui,sans-serif; --body:"Source Sans 3",system-ui,sans-serif;
+  --wrap:1280px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:18px/1.6 var(--body);color:var(--ink);background:#fff;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue-d)}
+h1,h2,h3{font-family:var(--head);line-height:1.15;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(30px,3.4vw,44px);font-weight:600;color:var(--navy)}
+h3{font-size:21px;font-weight:600}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+section{scroll-margin-top:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:6px;font:600 17px/1 var(--head);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s,background .15s,border-color .15s}
+.btn:active{transform:translateY(1px)}
+.btn-y{background:var(--yellow);color:var(--navy)}
+.btn-y:hover{background:#FFDD52}
+.btn-o{border-color:rgba(255,255,255,.55);color:#fff;background:transparent}
+.btn-o:hover{border-color:#fff}
+.btn-b{background:var(--navy);color:#fff}
+.btn-b:hover{background:#12355C}
+/* piksele z logo */
+.px{display:inline-grid;grid-template-columns:repeat(3,7px);gap:3px;vertical-align:middle}
+.px i{width:7px;height:7px;background:var(--blue);display:block}
+.px i:nth-child(2){opacity:.6}.px i:nth-child(3){opacity:.3}
+
+/* naglowek */
+.top{position:absolute;inset:0 0 auto 0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo img{height:40px;width:auto}
+.menu{display:flex;align-items:center;gap:30px}
+.menu a{color:#fff;text-decoration:none;font:500 16px var(--head);opacity:.9}
+.menu a:hover{opacity:1}
+.menu .login{border:1.5px solid rgba(255,255,255,.5);padding:9px 16px;border-radius:6px}
+.burger{display:none;background:none;border:0;width:48px;height:48px;padding:12px;cursor:pointer}
+.burger span{display:block;height:2px;background:#fff;margin:6px 0;transition:transform .2s,opacity .2s}
+
+/* pierwszy ekran */
+.hero{position:relative;background:var(--hero);color:#fff;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+.hero picture{position:absolute;top:0;bottom:0;right:max(0px,calc((100vw - 1400px)/2));aspect-ratio:4/5;height:100%;max-width:min(800px,58vw)}
+.hero picture img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.hero picture::after{content:"";position:absolute;inset:-1px;background:linear-gradient(90deg,var(--hero) 0%,rgba(24,23,24,0) 30%,rgba(24,23,24,0) 82%,var(--hero) 100%)}
+.hero .wrap{position:relative;width:100%;padding-top:96px;padding-bottom:90px}
+.hero-txt{max-width:620px}
+.hero .seria{font:600 15px var(--head);color:var(--yellow);margin-bottom:18px;display:flex;align-items:center;gap:12px}
+.hero h1{font-size:clamp(36px,4.6vw,64px);font-weight:700}
+.hero h1 span{display:block;font-weight:400;font-size:.62em;margin-top:14px;color:#E8EEF5}
+.hero .lead{font-size:clamp(17px,1.4vw,20px);color:#C9D2DC;margin-top:24px;max-width:540px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero .fakty{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:38px;font-size:16px;color:#AEB9C5}
+.hero .fakty b{color:#fff;font-weight:600}
+
+/* kursy */
+.sec{padding:110px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:44px;flex-wrap:wrap}
+.sec-head p{max-width:520px;color:var(--muted)}
+.path{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.kurs{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
+.kurs:hover{box-shadow:0 14px 34px rgba(10,37,64,.12);transform:translateY(-3px)}
+.kurs img{aspect-ratio:16/9;object-fit:cover;width:100%;height:auto}
+.kurs .b{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
+.krok{display:flex;align-items:center;gap:10px;font:500 14px var(--head);color:var(--muted);margin-bottom:10px}
+.krok .meter{display:inline-grid;grid-template-columns:repeat(4,8px);gap:3px}
+.krok .meter i{width:8px;height:8px;background:var(--line)}
+.krok .meter i.on{background:var(--blue)}
+.kurs h3{color:var(--navy)}
+.kurs ul{list-style:none;padding:0;margin:12px 0 18px;font-size:16px;color:var(--muted)}
+.kurs ul li{padding:2px 0}
+.cena{margin-top:auto;display:flex;align-items:baseline;justify-content:space-between;gap:10px;border-top:1px solid var(--line);padding-top:14px}
+.cena b{font:700 26px var(--head);color:var(--navy);white-space:nowrap}
+.cena small{font-size:14px;color:var(--muted)}
+.pakiet{margin-top:26px;display:grid;grid-template-columns:1.05fr 1fr;background:var(--navy);color:#fff;border-radius:10px;overflow:hidden}
+.pakiet img{width:100%;height:100%;object-fit:cover}
+.pakiet .b{padding:40px 44px;display:flex;flex-direction:column;justify-content:center}
+.pakiet h3{font-size:clamp(24px,2.4vw,32px)}
+.pakiet p{color:#C4D2E0;margin-top:12px}
+.pakiet .cena{border-color:rgba(255,255,255,.18);margin-top:26px}
+.pakiet .cena b{color:var(--yellow);font-size:34px}
+.pakiet .cena small{color:#C4D2E0}
+.pakiet .btn{margin-top:22px;align-self:flex-start}
+
+/* szkolenie */
+.gray{background:var(--gray)}
+.szk{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:center}
+.szk h2 + p{margin-top:18px;color:var(--muted)}
+.lista{list-style:none;padding:0;margin:24px 0 0}
+.lista li{position:relative;padding:7px 0 7px 26px}
+.lista li::before{content:"";position:absolute;left:0;top:16px;width:9px;height:9px;background:var(--blue)}
+.video{position:relative;border-radius:10px;overflow:hidden;background:#000;aspect-ratio:16/9;box-shadow:0 20px 50px rgba(10,37,64,.18)}
+.video img,.video iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
+.video button{position:absolute;inset:0;background:none;border:0;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.video .play{width:84px;height:84px;border-radius:50%;background:var(--yellow);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 26px rgba(0,0,0,.35);transition:transform .2s}
+.video button:hover .play{transform:scale(1.07)}
+.video .play::after{content:"";border-left:24px solid var(--navy);border-top:15px solid transparent;border-bottom:15px solid transparent;margin-left:6px}
+.video .czas{position:absolute;left:14px;bottom:12px;background:rgba(10,37,64,.85);color:#fff;font:500 14px var(--head);padding:5px 10px;border-radius:4px}
+
+/* nauka */
+.nauka{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.zalety{display:grid;grid-template-columns:1fr 1fr;gap:26px 34px;margin-top:34px}
+.zalety div{border-top:3px solid var(--blue);padding-top:14px}
+.zalety b{display:block;font:600 18px var(--head);color:var(--navy);margin-bottom:4px}
+.zalety span{font-size:16px;color:var(--muted)}
+
+/* autor */
+.autor{background:var(--blue);color:var(--navy)}
+.autor .wrap{display:grid;grid-template-columns:400px 1fr;gap:64px;align-items:center}
+.autor figure{margin:0;position:relative}
+.autor figure img{border-radius:8px;width:100%;height:auto;max-width:400px;aspect-ratio:1;object-fit:cover}
+.autor figure::before{content:"";position:absolute;right:-18px;bottom:-18px;width:64px;height:64px;background:var(--navy)}
+.autor figure::after{content:"";position:absolute;right:-42px;bottom:56px;width:20px;height:20px;background:var(--yellow)}
+.autor h2{color:var(--navy)}
+.autor .rola{font:500 18px var(--head);margin-top:10px}
+.autor p.t{margin-top:18px;max-width:640px}
+.mana{margin-top:28px;background:#fff;border-radius:8px;padding:22px 26px;max-width:640px}
+.mana b{font:700 20px var(--head);letter-spacing:.06em}
+.mana p{margin-top:6px;font-size:17px;color:var(--muted)}
+
+/* opinie */
+.ops{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 2px;padding:4px 2px 18px;scrollbar-width:none;cursor:grab}
+.ops::-webkit-scrollbar{display:none}
+.ops.drag{cursor:grabbing;scroll-snap-type:none}
+.op{flex:0 0 min(380px,84vw);scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px;display:flex;flex-direction:column;user-select:none}
+.op blockquote{margin:0;font-size:17px;flex:1}
+.op blockquote strong{color:var(--navy)}
+.op .kto{display:flex;align-items:center;gap:12px;margin-top:20px;font-size:15px;color:var(--muted)}
+.op .kto img{width:52px;height:52px;border-radius:50%}
+.op .kto b{display:block;color:var(--ink);font-size:16px}
+.nav{display:flex;gap:10px}
+.nav button{width:50px;height:50px;border-radius:6px;border:1.5px solid var(--line);background:#fff;cursor:pointer;font:600 20px var(--head);color:var(--navy)}
+.nav button:hover{border-color:var(--navy)}
+
+/* faq */
+.faq{max-width:860px}
+.faq details{border-bottom:1px solid var(--line);padding:4px 0}
+.faq summary{list-style:none;cursor:pointer;padding:18px 40px 18px 0;font:600 19px var(--head);color:var(--navy);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:6px;top:26px;width:12px;height:12px;background:var(--blue);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 20px;color:var(--muted)}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:1fr 1.2fr;gap:60px}
+.kontakt .dane{margin-top:26px;font-size:17px}
+.kontakt .dane a{font:600 20px var(--head);text-decoration:none}
+.kontakt .dane p{margin-top:16px;color:var(--muted)}
+.soc{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.soc a{border:1.5px solid var(--line);border-radius:6px;padding:8px 14px;text-decoration:none;color:var(--navy);font:500 15px var(--head)}
+.soc a:hover{border-color:var(--navy)}
+form{background:#fff;border-radius:10px;padding:34px;box-shadow:0 12px 40px rgba(10,37,64,.10)}
+label{display:block;font:500 15px var(--head);color:var(--navy);margin-bottom:6px}
+input,textarea{width:100%;font:17px var(--body);padding:13px 14px;border:1.5px solid var(--line);border-radius:6px;margin-bottom:16px;background:#fff;color:var(--ink)}
+input:focus,textarea:focus{outline:none;border-color:var(--blue)}
+textarea{min-height:130px;resize:vertical}
+.zgoda{display:flex;gap:10px;font-size:15px;color:var(--muted);margin-bottom:20px;align-items:flex-start}
+.zgoda input{width:20px;height:20px;margin:2px 0 0;flex:none}
+.ok{display:none;margin-top:14px;color:#0A7A3E;font-weight:600}
+
+footer{background:var(--navy);color:#B7C6D6;padding:56px 0 30px;font-size:16px}
+footer .g{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px}
+footer img{height:38px;width:auto}
+footer h4{font:600 16px var(--head);color:#fff;margin:0 0 12px}
+footer a{color:#B7C6D6;text-decoration:none}
+footer a:hover{color:#fff}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{padding:3px 0}
+footer .dol{margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:15px}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+@media (max-width:1080px){
+  .path{grid-template-columns:repeat(4,minmax(260px,1fr));overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 20px;padding-bottom:12px;margin:0 -20px;padding-left:20px;padding-right:20px;scrollbar-width:none}
+  .path::-webkit-scrollbar{display:none}
+  .kurs{scroll-snap-align:start}
+  .autor .wrap{grid-template-columns:300px 1fr;gap:44px}
+}
+@media (max-width:900px){
+  .menu{display:none;position:fixed;inset:0;background:var(--navy);flex-direction:column;justify-content:center;gap:26px;z-index:30}
+  .menu a{font-size:22px}
+  body.open .menu{display:flex}
+  .burger{display:block;position:relative;z-index:40}
+  body.open .burger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  body.open .burger span:nth-child(2){opacity:0}
+  body.open .burger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+  .hero{align-items:flex-end;min-height:100svh}
+  .hero picture{width:100%;height:64%;bottom:auto;right:0;aspect-ratio:auto}
+  .hero picture img{object-position:50% 18%}
+  .hero picture::after{background:linear-gradient(0deg,var(--hero) 0%,rgba(22,22,22,.6) 26%,rgba(22,22,22,0) 55%)}
+  .hero .wrap{padding-top:0;padding-bottom:44px}
+  .szk,.nauka,.kontakt{grid-template-columns:1fr;gap:38px}
+  .nauka img{order:-1}
+  .pakiet{grid-template-columns:1fr}
+  .pakiet .b{padding:28px 24px 30px}
+  .autor .wrap{grid-template-columns:1fr;gap:40px}
+  .autor figure{max-width:340px}
+  .autor figure::before{right:-10px;bottom:-10px;width:44px;height:44px}
+  .autor figure::after{right:-10px;bottom:46px;width:14px;height:14px}
+  footer .g{grid-template-columns:1fr 1fr}
+  footer .g > div:first-child{grid-column:1/-1}
+}
+@media (max-width:600px){
+  body{font-size:17px}
+  .top .wrap{height:64px}
+  .logo img{height:32px}
+  .sec{padding:72px 0}
+  .hero .seria{font-size:13px;margin-bottom:12px}
+  .hero h1{font-size:clamp(30px,8.6vw,38px)}
+  .hero h1 span{margin-top:8px;font-size:.6em}
+  .hero .lead{font-size:16px;margin-top:14px;line-height:1.5}
+  .hero .cta{margin-top:24px;gap:10px}
+  .hero .cta{flex-direction:column}
+  .hero .cta .btn{width:100%;min-height:48px;font-size:16px}
+  .hero .fakty{display:none}
+  .zalety{grid-template-columns:1fr;gap:20px}
+  form{padding:24px 20px}
+  .sec-head{margin-bottom:30px}
+  .nav{display:none}
+}
+@media (max-width:600px) and (max-height:700px){
+  .hero picture{height:58%}
+  .hero .lead{font-size:15.5px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Akademia Kursów - strona główna"><img src="img/logo-biale.webp" width="700" height="168" alt="Akademia Kursów - Prosto. Łatwo. Skutecznie."></a>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="menu" aria-label="Menu główne">
+      <a href="#kursy">Kursy</a>
+      <a href="#szkolenie">Bezpłatne szkolenie</a>
+      <a href="#autor">O mnie</a>
+      <a href="#opinie">Opinie</a>
+      <a href="#faq">Pytania</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="login" href="https://katalog.akademiakursow.com/logowanie.html" rel="noopener">Zaloguj się</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <picture>
+    <img src="img/kris-1280.webp" srcset="img/kris-800.webp 800w, img/kris-1280.webp 1280w, img/kris-1920.webp 1920w" sizes="(min-width:900px) 80svh, 100vw" width="1280" height="1600" alt="Krzysztof Mustwiło, autor kursów Angielski Bez Tajemnic" fetchpriority="high">
+  </picture>
+  <div class="wrap">
+    <div class="hero-txt">
+      <p class="seria"><span class="px"><i></i><i></i><i></i></span>Seria kursów Angielski Bez Tajemnic</p>
+      <h1>Kursy angielskiego online <span>Naucz się angielskiego w rok lub krócej</span></h1>
+      <p class="lead">Słownictwo, podstawy, czasy i gramatyka wytłumaczone po polsku, logicznie i krok po kroku. Bez lania wody i bez wkuwania regułek.</p>
+      <div class="cta">
+        <a class="btn btn-y" href="#kursy">Zobacz kursy i ceny</a>
+        <a class="btn btn-o" href="#szkolenie">Bezpłatne szkolenie</a>
+      </div>
+      <p class="fakty"><span><b>Full HD</b> i 100% online</span><span>dostęp <b>24/7 przez 12 miesięcy</b></span><span>stworzone przez człowieka, <b>0% AI</b></span></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="kursy">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Ścieżka Angielski Bez Tajemnic</h2>
+      <p>Cztery kursy ułożone w kolejności nauki. Możesz zacząć od pierwszego albo wejść od razu na swój poziom. Każdy kurs to lekcje wideo, ćwiczenia i tabele do pobrania.</p>
+    </div>
+    <div class="path">
+      <article class="kurs">
+        <img src="img/kurs-slownictwo.webp" width="960" height="540" loading="lazy" alt="Kurs Angielski Bez Tajemnic - Słownictwo Podstawowe">
+        <div class="b">
+          <div class="krok"><span class="meter"><i class="on"></i><i></i><i></i><i></i></span>Początkujący</div>
+          <h3>Słownictwo Podstawowe</h3>
+          <ul><li>40 godzin lekcji</li><li>słowa i zwroty na co dzień, z wymową</li></ul>
+          <div class="cena"><b>150 €</b><small>ok. 0,41 € dziennie</small></div>
+        </div>
+      </article>
+      <article class="kurs">
+        <img src="img/kurs-podstawy.webp" width="960" height="540" loading="lazy" alt="Kurs Angielski Bez Tajemnic - Podstawy">
+        <div class="b">
+          <div class="krok"><span class="meter"><i class="on"></i><i class="on"></i><i></i><i></i></span>Początkujący</div>
+          <h3>Podstawy</h3>
+          <ul><li>18 lekcji, 4,5 godziny</li><li>części mowy, ok. 2000 słów i zwrotów</li></ul>
+          <div class="cena"><b>200 €</b><small>ok. 0,54 € dziennie</small></div>
+        </div>
+      </article>
+      <article class="kurs">
+        <img src="img/kurs-czasy.webp" width="960" height="540" loading="lazy" alt="Kurs Angielski Bez Tajemnic - Czasy">
+        <div class="b">
+          <div class="krok"><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>Średnio zaawansowany</div>
+          <h3>Czasy</h3>
+          <ul><li>17 godzin lekcji</li><li>każdy czas osobno, najwięcej wymowy</li></ul>
+          <div class="cena"><b>300 €</b><small>ok. 0,83 € dziennie</small></div>
+        </div>
+      </article>
+      <article class="kurs">
+        <img src="img/kurs-gramatyka.webp" width="960" height="540" loading="lazy" alt="Kurs Angielski Bez Tajemnic - Gramatyka">
+        <div class="b">
+          <div class="krok"><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>Zaawansowany</div>
+          <h3>Gramatyka</h3>
+          <ul><li>27 godzin lekcji</li><li>przedimki, szyk zdania i reszta zasad</li></ul>
+          <div class="cena"><b>500 €</b><small>ok. 1,37 € dziennie</small></div>
+        </div>
+      </article>
+    </div>
+    <div class="pakiet">
+      <img src="img/kurs-pakiet.webp" width="960" height="540" loading="lazy" alt="Pakiet 4 kursów Angielski Bez Tajemnic">
+      <div class="b">
+        <h3>Pakiet 4 kursów - cała ścieżka</h3>
+        <p>Słownictwo, Podstawy, Czasy i Gramatyka w jednym zakupie: 90 godzin lekcji, wszystkie ćwiczenia i tabele, certyfikat po każdym ukończonym kursie.</p>
+        <div class="cena"><b>1150 €</b><small>ok. 3,15 € dziennie przez 12 miesięcy</small></div>
+        <a class="btn btn-y" href="#kontakt">Zapytaj o pakiet</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec gray" id="szkolenie">
+  <div class="wrap szk">
+    <div>
+      <h2>Bezpłatne szkolenie: jak skutecznie nauczyć się angielskiego</h2>
+      <p>Nagranie, od którego warto zacząć, zanim wybierzesz kurs.</p>
+      <ul class="lista">
+        <li>rozwiązania najczęstszych problemów z nauką angielskiego</li>
+        <li>jak zaplanować naukę i jakie narzędzia ją przyspieszają</li>
+        <li>Metoda Eliminacji do nauki słownictwa</li>
+        <li>jak angielski pomaga zarabiać więcej i rozwijać się za granicą</li>
+      </ul>
+    </div>
+    <div class="video" id="video">
+      <img src="img/nagranie.webp" width="1280" height="720" loading="lazy" alt="Szkolenie Jak skutecznie nauczyć się angielskiego - Krzysztof Mustwiło">
+      <button type="button" aria-label="Odtwórz nagranie szkolenia"><span class="play"></span></button>
+      <span class="czas">Nagranie szkolenia</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap nauka">
+    <div>
+      <h2>Uczysz się, kiedy chcesz i ile razy chcesz</h2>
+      <p style="margin-top:18px;color:var(--muted)">Wszystkie lekcje dostajesz od razu po zakupie. Oglądasz je na komputerze, tablecie albo telefonie, a postęp zapisuje się na bieżąco.</p>
+      <div class="zalety">
+        <div><b>Same konkrety</b><span>bez akademickiego żargonu i lania wody</span></div>
+        <div><b>Nauka wymowy</b><span>słowa, zwroty i całe zdania w stopniowanym tempie</span></div>
+        <div><b>Ćwiczenia i tabele</b><span>do pobrania i wydruku, z odpowiedziami</span></div>
+        <div><b>Wielokrotne przerabianie</b><span>każdą lekcję możesz oglądać ponownie</span></div>
+        <div><b>Monitorowanie postępów</b><span>wracasz dokładnie tam, gdzie skończyłeś</span></div>
+        <div><b>Certyfikat ukończenia</b><span>generowany automatycznie po kursie</span></div>
+      </div>
+    </div>
+    <img src="img/urzadzenia.webp" width="1200" height="800" loading="lazy" alt="Kurs Akademii Kursów na laptopie, tablecie i telefonie">
+  </div>
+</section>
+
+<section class="sec autor" id="autor">
+  <div class="wrap">
+    <figure><img src="img/kris-portret.webp" width="846" height="846" loading="lazy" alt="Krzysztof Mustwiło"></figure>
+    <div>
+      <h2>Cześć, jestem Krzysztof Mustwiło</h2>
+      <p class="rola">Inżynier elektronik, informatyk i twórca serii Angielski Bez Tajemnic</p>
+      <p class="t">Angielskiego nauczyłem się w niecały rok, jeszcze w podstawówce. Potem przyszły praca w USA, emigracja do Irlandii i prawie 13 lat w dziale wsparcia technicznego globalnej firmy IT, gdzie codziennie rozmawiałem z ludźmi z całego świata, prowadziłem szkolenia i pisałem dokumentację. Dziś łączę prawie 30 lat znajomości angielskiego z tym, co umiem najlepiej: tłumaczeniem skomplikowanych rzeczy w prosty sposób.</p>
+      <div class="mana"><b>M.A.N.A.</b><p>Metoda Analitycznej Nauki Angielskiego - zasady języka rozłożone na czynniki pierwsze, porównane z polskim i zebrane w tabele, zamiast wkuwania regułek jak w szkole.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="opinie">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Co mówią kursanci</h2>
+      <div class="nav"><button type="button" data-d="-1" aria-label="Poprzednie opinie">&larr;</button><button type="button" data-d="1" aria-label="Następne opinie">&rarr;</button></div>
+    </div>
+    <div class="ops">
+      <article class="op"><blockquote>Ktoś wreszcie wyjaśnił <strong>angielskie czasy w tak prosty i przystępny sposób</strong>. Chodziłam do szkoły językowej, miałam różnych nauczycieli na studiach, ale nikt nie potrafił tego tak wytłumaczyć.</blockquote><div class="kto"><img src="img/op-barbara-kostecka.webp" width="120" height="120" alt=""><span><b>Barbara Kostecka</b>Polska, kurs Czasy</span></div></article>
+      <article class="op"><blockquote>Kurs pozwala rozpocząć naukę w bardzo uporządkowany sposób - <strong>czułam się jak prowadzona za rękę</strong>. Ćwiczenia po każdej lekcji można wydrukować i mają odpowiedzi.</blockquote><div class="kto"><img src="img/op-kursant-marta-adamska.webp" width="120" height="120" alt=""><span><b>Marta Adamska</b>Irlandia, kurs Podstawy</span></div></article>
+      <article class="op"><blockquote>Nigdzie wcześniej nie widziałem, żeby ktoś <strong>tak logicznie wyjaśnił</strong> przypadki, dopełniacze i przedimki. Polecam, bo jest dużo, porządnie i nie po łebkach!</blockquote><div class="kto"><img src="img/op-kursant-krzysiekb.webp" width="120" height="120" alt=""><span><b>Krzysztof Baniewicz</b>Polska, kurs Gramatyka</span></div></article>
+      <article class="op"><blockquote>Jako emeryt bez jakichkolwiek podstaw zaryzykowałem i <strong>nie żałuję tego zakupu</strong>. Autor w prosty sposób wyjaśnia zagadnienia i dzieli się dużo większą wiedzą, niż się spodziewałem.</blockquote><div class="kto"><img src="img/op-kursant-pant.webp" width="120" height="120" alt=""><span><b>Pan T.</b>kurs Czasy</span></div></article>
+      <article class="op"><blockquote>Rozmawiam bardziej poprawnie i już nie używam tylko podstawowych czasów, <strong>moja pewność w konwersacjach wzrosła</strong>, a pisanie po angielsku znacznie się poprawiło.</blockquote><div class="kto"><img src="img/op-kursant-dareks.webp" width="120" height="120" alt=""><span><b>Darek S.</b>Irlandia, kurs Czasy</span></div></article>
+      <article class="op"><blockquote>Cały materiał jest logicznie ułożony i <strong>wreszcie zrozumiałam angielskie czasy</strong> - one są naprawdę proste! Lekcje nie są zbyt długie i mogę wracać tam, gdzie skończyłam.</blockquote><div class="kto"><img src="img/op-kursant-dariak.webp" width="120" height="120" alt=""><span><b>Daria K.</b>kurs Czasy</span></div></article>
+      <article class="op"><blockquote>Każdy czas jest osobno omawiany, a w książkach wszystko jest pomieszane. <strong>Nie traciłem czasu i pieniędzy na dojazdy</strong> i nie musiałem umawiać się na lekcje.</blockquote><div class="kto"><img src="img/op-kursant-maciek.webp" width="120" height="120" alt=""><span><b>Maciek</b>Irlandia, kurs Czasy</span></div></article>
+      <article class="op"><blockquote>Miałam już dość przypadkowych kursów z internetu, a tu <strong>wszystko jest bardzo dobrze wyszczególnione</strong>, a spolszczona wymowa słów i zwrotów wchodzi w ucho.</blockquote><div class="kto"><img src="img/op-malgorzata-m.webp" width="120" height="120" alt=""><span><b>Małgorzata Mazurkiewicz</b>Belgia, kurs Podstawy</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec gray" id="faq">
+  <div class="wrap">
+    <h2 style="margin-bottom:26px">Najczęstsze pytania</h2>
+    <div class="faq">
+      <details open><summary>Jak wyglądają kursy?</summary><p>Kurs to lekcje w formie filmów do oglądania online, w jakości Full HD. Do lekcji są ćwiczenia do samodzielnego wykonania i tabele do pobrania.</p></details>
+      <details><summary>Czy mogę zobaczyć lekcje przed zakupem?</summary><p>Tak. Lekcje demo są w opisie każdego kursu, a kolejne próbki na kanale Akademii Kursów na YouTube.</p></details>
+      <details><summary>Czy dostanę certyfikat?</summary><p>Tak. Po ukończeniu wszystkich lekcji system sam generuje certyfikat do pobrania.</p></details>
+      <details><summary>Czy kurs działa na telefonie i tablecie?</summary><p>Tak, choć najwygodniej uczyć się na większym ekranie, który wyświetla filmy w Full HD. Potrzebne jest połączenie z internetem i dźwięk.</p></details>
+      <details><summary>Czy w kursach są lekcje z native speakerem?</summary><p>Nie. Seria Angielski Bez Tajemnic to kursy wideo prowadzone metodą M.A.N.A. - z nauką wymowy, słownictwa i wszystkich niezbędnych zasad gramatyki, bez indywidualnych lekcji.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="kontakt">
+  <div class="wrap kontakt">
+    <div>
+      <h2>Masz pytanie o kurs?</h2>
+      <p style="margin-top:16px;color:var(--muted)">Napisz, chętnie odpowiem - także na pytania, których nie ma w dziale pytań i odpowiedzi.</p>
+      <div class="dane">
+        <a href="mailto:pomoc@akademiakursow.com">pomoc@akademiakursow.com</a>
+        <p>Krzysztof Mustwiło<br>PO BOX 13289, Bray, Co. Wicklow, Irlandia</p>
+      </div>
+      <div class="soc">
+        <a href="https://www.youtube.com/@akademiakursow" rel="noopener">YouTube</a>
+        <a href="https://www.facebook.com/AkademiaKursow" rel="noopener">Facebook</a>
+        <a href="https://instagram.com/akademia.kursow" rel="noopener">Instagram</a>
+        <a href="https://tiktok.com/@akademiakursow" rel="noopener">TikTok</a>
+      </div>
+    </div>
+    <form id="form" novalidate>
+      <label for="f1">Imię</label><input id="f1" name="imie" autocomplete="given-name">
+      <label for="f2">E-mail</label><input id="f2" name="email" type="email" autocomplete="email">
+      <label for="f3">Wiadomość</label><textarea id="f3" name="wiadomosc"></textarea>
+      <label class="zgoda"><input type="checkbox"> Zapoznałem się z zasadami przetwarzania moich danych osobowych opisanymi w Polityce prywatności.</label>
+      <button class="btn btn-b" type="submit">Wyślij wiadomość</button>
+      <p class="ok" id="ok">To podgląd - formularz zacznie wysyłać wiadomości na docelowej stronie.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="g">
+      <div><img src="img/logo-biale.webp" width="700" height="168" alt="Akademia Kursów" loading="lazy"><p style="margin-top:16px;max-width:360px">Kursy angielskiego online po polsku. Prosto. Łatwo. Skutecznie.</p></div>
+      <div><h4>Kursy</h4><ul><li><a href="#kursy">Słownictwo Podstawowe</a></li><li><a href="#kursy">Podstawy</a></li><li><a href="#kursy">Czasy</a></li><li><a href="#kursy">Gramatyka</a></li></ul></div>
+      <div><h4>Przydatne</h4><ul><li><a href="#faq">Pytania i odpowiedzi</a></li><li><a href="#autor">O mnie</a></li><li><a href="#kontakt">Kontakt</a></li><li><a href="https://katalog.akademiakursow.com/logowanie.html" rel="noopener">Zaloguj się</a></li></ul></div>
+    </div>
+    <div class="dol"><span>&copy; <span id="rok">2026</span> Akademia Kursów</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=akademiakursow.com&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.body, bur=document.querySelector('.burger');
+  bur.addEventListener('click',function(){var o=b.classList.toggle('open');bur.setAttribute('aria-expanded',o)});
+  document.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){b.classList.remove('open')})});
+  document.getElementById('rok').textContent=new Date().getFullYear();
+  var v=document.getElementById('video');
+  v.querySelector('button').addEventListener('click',function(){
+    v.innerHTML='<iframe src="https://player.vimeo.com/video/1249121520?autoplay=1" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Nagranie szkolenia"></iframe>';
+  });
+  var ops=document.querySelector('.ops');
+  document.querySelectorAll('.nav button').forEach(function(btn){btn.addEventListener('click',function(){ops.scrollBy({left:btn.dataset.d*400,behavior:'smooth'})})});
+  var down=false,sx=0,sl=0,moved=false;
+  ops.addEventListener('mousedown',function(e){down=true;moved=false;sx=e.pageX;sl=ops.scrollLeft;ops.classList.add('drag')});
+  window.addEventListener('mouseup',function(){if(down){down=false;ops.classList.remove('drag')}});
+  ops.addEventListener('mousemove',function(e){if(!down)return;var d=e.pageX-sx;if(Math.abs(d)>3)moved=true;ops.scrollLeft=sl-d});
+  document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').style.display='block'});
+})();
+</script>
+</body>
+</html>
